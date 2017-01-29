@@ -1,0 +1,23 @@
+The solution to level 24:
+
+flex-direction: column-reverse;
+flex-wrap: wrap-reverse;
+justify-content: center;
+align-content: space-between;
+
+// Changes orientation of the frogs so that they are vertical
+// Also changes direction to yellow, green, red instead of red, green, yellow
+flex-direction: column-reverse;
+
+// Wraps the frogs so that the yellow frogs are in a separate column-reverse
+// Reverse part puts the yellow frogs on the left so they are on the same side
+// as the yellow lilypads
+// The red and green frogs are now on their lilypads
+flex-wrap: wrap-reverse;
+
+// Moves the yellow frogs so that they are vertically centered like the yellow lilypads
+justify-content: center;
+
+// Puts the same amount of space between the column of yellow frogs and the column
+// of green and red frogs, which forces the yellow frogs to line up with the yellow lilypads
+align-content: space-between;
